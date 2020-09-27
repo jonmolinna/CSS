@@ -1,0 +1,114 @@
+1.-Box Model
+------------------------------------------------------------------
+- Elementos inline:
+  son elementos que solo ocupa su contenido
+  no se puede modificar ni su ancho no su alto
+- Elementos block:
+  Ocupan todo el ancho disponible
+  Se les puede asignar ancho y alto
+
+Padding  =>  El contenido se separa de su borde.
+Border   =>  sus dimensiones cuenta para el tamaño total, empuja a otros elementos
+Outline  =>  Sus dimensiones no cuentan para el tamaño total, te sobre escribe, se utiliza para localizar elemento
+Margin   =>  La caja se separa de su alrededor.
+
+
+2.-Margin y Padding
+--------------------------------------------------------------------
+Margin
+----------------
+- El margin es la separacion entre una caja y las cajas adyacentes.
+- Margin es un shorthand
+
+-margin-top:
+-margin-right:
+-margin-bottom:
+-margin-left:
+-margin: 1em;               (top right bottom left)
+-margin: 1em 2em;           (Y X)
+-margin: 1em 2em 3em;       (top, X, bottom)
+-margin: 1em 2em 3em 4em;   (top right bottom left)
+
+Padding
+--------------------
+- Padding es la separacion entre el contenido y su borde.
+- Padding es un shorthand.
+
+-padding-top:
+-padding-right:
+-padding-bottom:
+-padding-left:
+-la forma de aplicar es igual de margin.
+
+
+3.-Border
+--------------------------------------------------------------------
+- Border es la linea que rodea a la caja
+- Border es un shorthand
+
+- Las propiedades de los bordes son:
+    - width
+    - style
+    - color
+
+- Existen bastantes combinaciones
+    - border-width: 2px;                (top right bottom left)
+    - border-style: solid dotted;       (Y X)
+    - border-color: red blue green;     (top x bottom)
+    - border-width: 2px 3px 4px 5px;    (top right bottom left)
+
+- Propiedades de los bordes
+    border-width
+        px|em|rem|%
+
+    border-style
+        none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit
+
+    border-color
+        css native|rgb|rgba|hs1|hsla|hexadecimal|transparent
+
+    border-top: (width | style | color)
+    border-right: (width | style | color)
+    border-bottom: (width | style | color)
+    border-left: (width | style | color)
+
+    border: 5px solid red;
+
+
+4.-Outline
+--------------------------------------------------------------------
+- Outline es la linea que rodea a la caja entre el border y el margin
+- Outline es un shorthand
+
+- Las propiedades de outline son:
+    - width
+    - style
+    - color
+    - offset
+
+- Propiedades de los outline
+    outline-width
+        px|em|rem|%
+
+    outline-style
+        none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit
+
+    outline-color
+        css native|rgb|rgba|hs1|hsla|hexadecimal|transparent
+
+    outline-top: (width | style | color)
+    outline-right: (width | style | color)
+    outline-bottom: (width | style | color)
+    outline-left: (width | style | color)
+
+    outline: 5px solid red;
+    outline-offset: 2px | -2px
+
+
+
+
+
+
+Medidas absolutas
+------------------------
+1em => 16px
