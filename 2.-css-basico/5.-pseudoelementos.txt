@@ -1,0 +1,21 @@
+Pseudoelementos
+-------------------------------------------------------
+- Se utiliza para dar estilo a partes especificas de un elemento.
+- La sintaxis es selector::pseudo-element o nombre de class { estilos }
+
+- Existen 5 Pseudoelementos:
+    - ::first-line (Solo se aplica a elementos de bloque). => Dar estilo solo al primer letra de la palabra.
+    - ::first-letter (Solo se aplica a elementos de bloque). => Da estilos a la primera linea de un parrafo.
+    - ::selection => Da estilos cuando el usuario seleciona una frase o letras.
+
+    - ::before
+    - ::after
+        - la propiedad content es obligatoria.
+        - son elementos de linea por defecto.
+        - son hijos del elemento al que pertencen.
+
+    .dolar::before,
+    .dolar::after{
+        content: 'S/.' => obligatorio
+        mas estilos
+    }
