@@ -1,0 +1,42 @@
+1.-Selectores Basicos
+--------------------------------------------------------------
+<h1 class="title">Hola</h1>     =>  .title{color: red;}
+<h1 id="title">Hola</h1>     =>     #title{color: red;} // No es recomendable usar id para dar estilos
+
+
+2.-Cascada y Herencia
+---------------------------------------------------------------
+->  !important          =   Gana todo
+->  Estilos en Linea    =   1000
+->  id                  =   100
+->  clases              =   10
+->  Etiqueta            =   1
+
+
+2.-Resetear Estilos CSS
+----------------------------------------------------------------
+normalize.css   => Permite resetear los estilos css por defecto de los navegadores
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+=> Permite que el pading y margin se ajusten a las medidas que realizamos, sin tener que estar sumando.
+
+https://necolas.github.io/normalize.css/
+
+
+3.-Metodologia del BEM
+-----------------------------------------------------------------
+Los bloques se suele denominar con una sola palabra o con dos palabras
+.menu   /   .main-menu
+.gallery /  .main-gallery
+
+Los elementos se nombran con el nombre del bloque que pertenece y su nombre con dos guiones bajos
+.menu__item     /   .main-menu__link
+.gallery__img   /   .main-gallery__item
+
+Los modificadores se nombran con el nombre del bloque que pertence y su nombre con dos guiones medios
+.menu__item--active
+.gallery__item--special
