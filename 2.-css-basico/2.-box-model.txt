@@ -103,12 +103,3 @@ Padding
 
     outline: 5px solid red;
     outline-offset: 2px | -2px
-
-
-
-
-
-
-Medidas absolutas
-------------------------
-1em => 16px
