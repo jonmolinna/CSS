@@ -1,0 +1,19 @@
+Display
+-------------------------------------------------------
+- Nos permite definir como se comporta una caja.
+- De forma natural existen elementos en linea y elementos el bloque.
+- Los valores de esta propiedad son:
+    - inline => Establece que la caja se comporta como si fuera un elemento en linea.
+             => No admiten dimensiones (width y heigth).
+             => Admiten margin y padding pero no afecta el flujo vertical, solo horizontal.
+    - block => Establece que la caja se comporta como si fuera un elemento en bloque.
+            => Admiten dimensiones (width y heigth).
+            => Admiten margin y padding y afecta el flujo vertical, solo el horizontal
+    - inline-block => Se comporta como un elemento en linea pero acepta width y heigth.
+    - none => Oculta el elemento pero se sigue renderizando.
+           => Se oculta el elemento, y su espacio nose respeta.
+    - table => Imita el comportamiento de una tabla.
+    - list-item => Imita el comportamiento de una lista.
+
+    - flex => maquetar componentes. (ver el tema)
+    - grid => maquetar layout.      (ver el tema)
