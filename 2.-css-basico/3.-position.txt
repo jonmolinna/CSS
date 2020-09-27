@@ -1,0 +1,137 @@
+1.-Position
+---------------------------------------------------------
+- Position es la propiedad que nos permite modificar el flujo de HTML.
+- Los valores de position son:
+    -static (Valor por defecto)
+    -relative
+    -absolute
+    -fixed
+    -sticky
+
+- Al tener un elemento posicionado podemos moverlo en los 3 ejes
+    -top: Podemos mover el elemento en ralacion a la parte superior.
+    -right: Podemos mover el elemento en relacion a la parte derecha.
+    -bottom: Podemos mover el elemento en relacion  a la parte inferior.
+    -left: Podemos mover el elemento en relacion a la parte izquierda.
+    -z-index: Podemos mover el elemento en el eje Z.
+
+
+2.-Position Relative
+---------------------------------------------------------------------------
+- El valor relative hace que el elemento se coloque respecto a su posicion en el flujo
+- Al moverlo el elemento conserva su espacio reservado.
+- su punto de referencia no se modificara aunque movamos el elemento.
+=> Siempre va a mantener su espacio
+
+.box1 {
+    position: relative;
+    /* top right bottom left z-index */ ya podemos usar
+    top: -50px;         (tiene mayor peso)
+    left: 50px;         (tiene mayor peso)
+    right: -300px;
+    bottom: 300px;
+}
+
+
+3.-Position Absolute
+---------------------------------------------------------------------------
+- El valor absolute hace que el elemento se coloque respecto a su contenedor posicionado mas cercano,
+  si no encuentra ninguno sera el viewport.
+- El elemento no conserva su espacio en el flujo.
+- Si no tiene dimensiones declaradas, sus dimensiones se ajustan al contenido.
+- Su punto de referencia no se modificara aunque movamos el elemento.
+=> Pierde su espacio que lo contiene.
+
+.container {
+    position: relative;
+}
+
+.box1 {
+    position: absolute;
+    left: 500px; /* Si el padre no tiene position relativa, la caja tomara el contexto al tamaño del ventana del navegador */
+    botton: 3px; /* Si el padre tiene position relative, la caja tomara el contexto al tamaño del padre */
+}
+
+
+4.-Position Fixed
+---------------------------------------------------------------------------
+- El valor fixed hace que el elemento se coloque respecto al viewport.
+- El elemento no conserva su espacio en el flujo.
+- Si no tiene dimensiones declaradas, sus dimensiones se ajustan al contenido.
+- Su punto de referencia no se modificara aunque movamos el elemento.
+- Cuando hacemos scroll el elemento no se movera, se queda fijado.
+=> Pierde su espacio que lo contiene. (Es igual que el position absolute, solo queda fijado).
+
+creando un menu fijo
+--------------------
+html
+-----
+<body>
+    <div class="menu">Menu</div>
+    <h1 class="title">Titulo</h1>
+    <p class="text">lorem ipsum dolor</p>
+</body>
+
+Css
+-------
+body {
+    padding-top: 6em;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.title {
+    margin: 0
+}
+
+
+5.-Position Sticky
+---------------------------------------------------------------------------
+- El valor sticky es una mezcla entre relative y fixed.
+- El elemento conserva su espacio en el flujo.
+- Si no tiene dimensiones declaradas, sus dimensiones se ajustan al contenido.
+- Su punto de referencia no se modificara aunque movamos el elemento.
+- Cuando hacemos scroll el elemento se movera hasta alcanzar el tope establecido.
+
+- El position sticky actua primero como relative hasta que llegue al top(4), se pone a fixed.
+
+Creando un menu fijo.
+--------------------------
+HTML
+----------
+<div class="slide">SLIDE</div>
+<div class="menu">Menu</div>
+<h1 class="title">Titulo</h1>
+<p class="text">Lorem ipsum dolor...</p>
+
+Css
+----------
+.slide {
+
+}
+
+.menu {
+    background: yellow;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 2em;
+    width: 100%;
+    position: sticky;
+    top: 0; /* Cuando llegue a esta medida actua como position fixed */
+}
+
+.title {
+
+}
+
+
+6.-z-index
+---------------------------------------------------------------------------
+- Nos permite modificar el orden de las capas en el eje z (profundidad)
+- Admite valores positivos y negativos.
+- Es recomendable usar valares no consecutivos. 100, 200, 300...
+- Si el padre tiene z-index declarado no podremos poner a un hijo por encima.
