@@ -1,0 +1,24 @@
+Variables Css (Custom Properties)
+---------------------------------------------
+- Una variable es un espacio en memoria en el que guardamos un valor para poder reutilizar o midifcarlo.
+- Las variables necesitan estar dentro de un selector.
+- Tienen herencia y cascada.
+- Existen variables globales y locales, dependeran del selector en el que lo declaremos.
+- Las variables css no son lo mismo que las variables scss (sass).
+
+Su sintaxis es:
+    selector {
+        --nombre-variable; valor;
+    }
+
+    propiedad: var(--nombre-variable)
+
+Declarando variables globales
+--------------------------------------------------
+:root {
+    --color: blue;
+}
+
+.parrafo {
+    color: var(--color)
+}
