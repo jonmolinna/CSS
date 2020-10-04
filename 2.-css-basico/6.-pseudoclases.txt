@@ -1,0 +1,78 @@
+PseudoClases
+-----------------------------------------------
+Son selectores que raccionan en tiempo real detectando la interaccion del usuario con algunos elementos.
+funcionan con todos los selectores de css.
+no estan atados an ningun elemento.
+su sintaxis es:
+    selector:pseudoclase{
+        estilos
+    }
+
+    :pseudoclase{
+        estilos
+    }
+
+PseudoClase Dynamic
+--------------------------------------------------
+:link (links) => Link no visitado.
+:visited (links) => Link visitado.
+:active (links) => el momento del click. (* se usa mas en botones)
+:hover => Al poner el mouse sobre el elemento.
+:focus => Se aplica solo al elemento que tiene el foco. (input)
+
+PseudoClase Target
+----------------------------------------------------
+:target => Elemento es objetivo de un marcador o ancla.
+
+PseudoClase Language
+--------------------------------------------------------
+:lang() => Elemento que contiene el atributo lang que especifiquemos.
+
+PseudoClase de Estado
+-----------------------------------------------------------
+:enabled (formulario) => activo
+:disabled (formulario) => desactivado
+:checked (formulario) => mas se usa en checked
+:in-range (formulario) => se usa en number => el estilo se aplica dentro del rango.
+:out-of-range (formulario) => use en number => el estilo se aplica fuera de rango.
+:required (formulario) =>
+:optional (formulario) =>
+:valid (formulario) =>
+:invalid (formulario) =>
+:read-only
+:read-write
+:fullscreen.
+
+PseudoClase Structural
+----------------------------------------------------------------
+:root => Representa la raiz del documento (html) usando una pseudoclase tenemos mas especificidad
+         que si usaremos html.
+         se usa para declarar variables.
+         :root{} is equals a html{}
+
+:empty => Esta pseudoclase se aplica para los elementos vacios, es decir, etiquetas que no tienen contenido.
+
+-> child
+        :first-child => Seleciona al primer hijo (independientemente del tipo de etiqueta).
+        :last-child => Selecciona al ultimo hijo (independientemente del tipo de etiqueta).
+        :nth-child(n) => Selecciona al hijo n (independientemente del tipo de etiqueta).
+        :nth-last-child(n) => Seleciona al hijo n empezando a contar desde el ultimo (independientemente del tipo de etiqueta).
+        :only-child => Selecciona al hijo unico (independientemente del tipo de etiqueta).
+
+-> type
+        :first-of-type
+        :last-of-type
+        :nth-of-type()
+        :nth-last-of-type()
+        :only-of-type
+
+-> Valores posibles de n (:nth-child(n), :nth-last-child(n))
+        odd - Impares
+        even - Pares
+        numeros enteros - 2,3,4...
+        equaciones (1n, 2n, 4n+1, n+4,....)
+            n es un multiplicador va de 0 hasta que se quede sin elementos. 
+
+-> Negation
+        :not() => Selecciona al elemento que no cumpla la condicion, se puede poner cualquier selector salvo otro
+        :not
