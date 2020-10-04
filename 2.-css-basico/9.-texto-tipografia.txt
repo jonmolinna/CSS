@@ -1,0 +1,49 @@
+Tipografias
+-------------------------------------------
+- a los tipos de letra que existen se le denomina fuentes o tipografia.
+- podemos dividirlo en dos grupos:
+    - familias tipograficas: fuentes especificas con nombre (Arial, Times New Roman, ....)
+    - familias genericas o seguras: fuentes segun sus caracteristicas.
+        - serif => tienen un adorno en los remates
+        - sans-serif => tienen un corte seco en los remates (bueno para leer) 
+        - cursive => emulan tipografia manuscrita.
+        - fantasy => letra decorativa.
+        - monospace => todo los caracteres tienen el mismo ancho.
+
+- cuando elegimos una fuente debemos poner fuentes de reserva.
+body {
+    font-family: 'Times New Roman', Times, Serif;
+}
+
+- las propiedades para cambiar el estilo de las fuentes/textos son:
+    -font-family => se establece la familia tipografica.
+    -font-size => establece el tamaño de la fuente. 
+                - px => pixeles (medida absoluta) 
+                - em => medida relativa al contexto (al padre)
+                - rem => medida relativa al html
+                - % => medida relativa al tamaño actual
+                
+                - vh => medida relativa al height del viewport
+                - vw => medida relativa al width del viewport
+                - vmin => medida relativa al valor minimo del viewport
+                - vmax => medida relativa al valor maximo del viewport
+
+    -font-weight => establece el grosor de la fuente. bold | normal | 100 - 900
+    -font-style => establece el estilo de la tipografia. normal | italic | oblique.
+
+    -text-transform => transformael texto a mayusculas, minusculas, etc.
+                lowercase => minusculas
+                uppercase => mayusculas
+                capitalize => primer letra de cada palabra el mayusculas
+
+    -text-align => alinea el texto del elemento a la izquierda, derecha, etc. solo elementos en bloque
+                    excepto en botones, aunque sean elemento en linea funciona.
+                    center | left | right | justify
+
+    -text-decoration => establece la decoracion del texto.
+                    overline | line-throught | underline | none
+
+    -text-indent => mueve la primera en un de texto. solo elementos de bloque.
+
+    -line-height => establece la altura de la linea.
+    -letter-spacing => establece la separacion de las letras con una medida en cualquier unidad.
