@@ -1,0 +1,45 @@
+Background
+------------------------------------------------
+- Es una propiedad que nos permite darle un fondo a las cajas.
+- la propiedad background es un shorthand, la lista de propiedades que incluye background son:
+    -background-color: nos permite establecer un color de fondo.
+    -background-image: url(ruta) => nos permmite establecer una imagen de fondo.
+    -background-repeat: nos permite establecer si el fondo se repite o no.
+                        repeat-x | repeat-y | no-repeat
+
+    -background-position: nos permite establecer la posicion del background o imagen, sino se especifica 
+                          un segundo valor sera centar.
+                          - left top
+                          - left center
+                          - left bottom
+                          - right top
+                          - right center
+                          - right bottom
+                          - center top
+                          - center center
+                          - center bottom
+                          - x% y%
+                          - xpos ypos
+                          - initial
+                          - inherit
+
+    -background-size: nos permite establecer el tamaño del background o de la imagen del fondo.
+                        x [y] | auto | cover | contain
+                        - x => el valor y es opcional, si no la ponemos lo calcula automaticament.
+                        - cover => cubre la caja por completo aunque la imagen escape del contenedor.
+                        - contain => la imagen se ajusta al contenido.
+
+    -background-origin: nos permite establecer desde donde se empezara a dibujar el fondo.
+                        redimensiona la imagen para que ocupe la zona que le decimos.
+                        border-box | padding-box | content-box
+
+    -background-clip: nos permite establecer en que parte de la caja se dibujara el fondo.
+                      muestra la imagen desde donde la decimos, solo oculta, no redimensiona.
+                        border-box | padding-box | content-box
+                        - border-box => se extiende del contenido hasta border-box.
+                        - padding-box => no incluye al border.
+                        -content-box => solo ocupa el contenido.
+
+    -background-attachment: permite establecer si el fondo se colocara respecto a la caja o al viewport.
+                        - scroll => valor por defecto. hace relativo a la caja.
+                        - fixed => hace relativo al viewport. se realiza el efecto parallax.
