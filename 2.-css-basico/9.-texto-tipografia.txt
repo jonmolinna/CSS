@@ -31,6 +31,7 @@ body {
     -font-weight => establece el grosor de la fuente. bold | normal | 100 - 900
     -font-style => establece el estilo de la tipografia. normal | italic | oblique.
 
+--------------------------------------------------------------------------------
     -text-transform => transformael texto a mayusculas, minusculas, etc.
                 lowercase => minusculas
                 uppercase => mayusculas
@@ -41,9 +42,13 @@ body {
                     center | left | right | justify
 
     -text-decoration => establece la decoracion del texto.
-                    overline | line-throught | underline | none
+                    overline | line-through | underline | none
 
     -text-indent => mueve la primera en un de texto. solo elementos de bloque.
 
+---------------------------------------------------------------------------------------------
     -line-height => establece la altura de la linea.
     -letter-spacing => establece la separacion de las letras con una medida en cualquier unidad.
+
+------------------------------------------------------------------------------------------
+Para analizar fuentes web => whatFont (extension)
