@@ -1,0 +1,30 @@
+Tablas
+-----------------------------------------------------
+table-layout: Define como se comportan las dimensiones de una tabla y los anchos de las columnas
+    automatic: valor por defecto.
+    fixed: necesita un width declarado, si no se le da un ancho a cada columna se distribuyen equitativamente
+
+caption-side: define donde se coloca el caption de una tabla (titulo).
+    top: valor por defecto.
+    bottom: se coloca al pie de la tabla.
+
+border-spacing: controla el espacio entre las celdas recibe una medida en cualquier unidad.
+border-collapse: controla si las celdas se mantienen juntas o separadas.
+    separate: valor por defecto.
+    collapse: junta las celdas.
+
+empty-cells: controla que hacer con las celdas vacias.
+    show: valor por defecto.
+    hide: oculta las celdas vacias.
+
+
+Creando una tabla responsive
+-------------------------------------
+<div class="table-container">
+    <table class="table">
+    </table>
+</div>
+
+.table-container{
+    overflow-x: auto;
+}
