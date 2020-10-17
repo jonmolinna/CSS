@@ -1,0 +1,21 @@
+object-fit: se usa para especificar como se debe cambiar el tamaño de <img> o <video> para que ajuste asu contenedor.
+    -fill: valor por defecto.
+    -contain: el contenido se ajustara hasta rellenar de forma horizontal o vertical el contenedor sin deformarce.
+    -cover: el contenido se ajustara hasta rellenar de forma horizontal y vertical el contenedor sin deformarce.
+    -none: el contenido no se redimensiona y mantiene su tamaño original mostrando solo el trozo de las dimensiones especificas.
+    -scale-down: selecciona el menor de la comparacion entre none y contain.
+
+object-position: coloca la imagen en el contenedor, se usa con object-fit: cover o none (left, center, right, 1px..)
+
+filter:
+    -none
+    -blur(px): desenfoca la imagen.
+    -brightness(%): ajusta el brillo de la imagen siendo 1 por defecto. de 1 al 0 dan oscuridad y 1 a n dan sobreexposicion.
+    -contrast(%): ajusta el contraste de la imagen siendo 1 por defecto, de 0 es negro y de 1 a n dan mas contraste.
+    -drop-shadow(h-shadow v-shadow blur (spread) color): aplica una sombra paralela a la imagen.(1px 2px 5px (4px) black)
+    -grayscale(%): convierte la imagen a escala de grises, la escala es de 0 a 1.
+    -hue-rotate(deg): añade matiz de color a la imagen, segun la rueda cromatica. el valor maximo es 360deg.
+    -invert(%): invierte el color de la imagen, 0 valor por defecto y 1 es totalmente invertido.
+    -opacity(%): controla la opacidad de la imagen, 1 valor por defecto y 0 transparente.
+    -saturate(%): controla la saturacion del imagen. 1 valor por defecto, 0 desaturado y encima de 1 es sobresaturado.
+    -sepia(%): aplica un tono sepia a la imagen, 0 valor defecto y 1 totalmente sepia.
