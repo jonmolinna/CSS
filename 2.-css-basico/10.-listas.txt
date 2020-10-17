@@ -1,0 +1,33 @@
+Listas (Ordenadas y Desordenadas)
+---------------------------------------
+Normalmente necesitamos resetear los estilos por defecto de una lista:
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+Hay tres propiedades para las listas, pueden aplicar al padre o a los elementos de la lista.
+
+list-style-type: Establece el estilo de viñeta
+    disc => por defecto (circulo)
+    circle  => circulo, sin relleno
+    square  => cuadrado
+    decimal => numero (ol)
+    decimal-leading-zero    => deja un cero adelante (01)
+    lower-roman
+    lower-greek
+    lower-latin
+    upper-latin
+    armenian
+    georgian
+    lower-alpha
+    upper-alpha
+
+list-style-position: Hace que las viñetas se coloquen  por dentro o por fuerza del elemeto.
+    outside
+    inside
+
+list-style-image: Pone una imagen en lugar de la viñeta, no se suele utilizar porque hay formas mucho 
+                    mas eficientes de hacerlo.
+    url(image)
+
+Normalmente se suele usar el shorthand list-style
