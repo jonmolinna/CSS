@@ -1,0 +1,70 @@
+Degradados
+-----------------------------------------------------------
+un degradado es una transicion entre un color u otro. El navegador calculara todos los pasos intermedios entre los colores del degradado.
+
+Es un valor de background-image
+Existen dos tipos de degradados: lineales y radiales
+
+Degradados Lineales
+---------------------------------------------------------------------------------------------
+    linear-gradient([direction], color1, color2....)
+    background-image: linear-gradient(red, blue, ....);
+    la direccion es opcional, se puede establecer con un angulo(20deg, 190deg...) o estableciendo la direccion del degradado con
+    "to top | right | bottom | left | top left | top right | bottom left | bottom right"
+    background-image: linear-gradient(to right, red, blue);
+
+    si no establecemos paradas de color, el navegador dividira el espacio disponible entre los colores que tenga que pintar.
+    2 colores 0% 100%
+    3 colores 0% 50% 100%
+
+    para establecer las paradas se puede usar cualquier medida, px, em, %...
+    si las paradas/inicios empiezan en el mismo sitio se genera un corte solido
+    background-image: linear-gradient(red 50%, blue 50%);
+
+    linear-gradient(direction, color-1 stop, color-2 start [stop]...)
+    background-image: linear-gradient(red 50%, blue 50% 70%, green 75%);
+
+    .box {
+        background-image: linear-gradient(to right, red, blue)
+        background-image: linear-gradient(to top right, red, blue)
+        background-image: linear-gradient(90deg, red, blue)
+        background-image: linear-gradient(red 50%, blue 50% 70%, yellow)
+    }
+
+    .box {
+        background-image: repeating-linear-gradient(30deg, red 0, red 10px, blue 10px, blue 20px);
+    }
+
+    .box-sombreado {
+        background-image: repeating-linear-gradient(30deg, red 0, blue 70px);
+    }
+
+
+Degradados Radiales
+-------------------------------------------------------------------------------------------------
+    funcionan de una forma similar a los degradados lineales.
+    background-image: radial-gradient([shape], red, blue);
+    background-image: radial-gradient(red, blue);
+
+    por defecto, shape se ajustara al tamaño de la caja, pero podemos establecer si queremos un circulo o una elipse y difinir el radio o los radios.
+    background-image: radial-gradient(circle 100px, red, blue);
+    si no establecemos un punto de origen, el punto 0 0 sera el centro del elemento, para establecer el punto de origen podemos hacerlo en medidas o con palabras clave.
+    con la palabra "at" establecemos el punto de origen, los valores aceptados son:
+    top | right | bottom | left | center | closest-side | closest-corner | farthest-side | farthest-corner
+    background-image: radial-gradient(circle 100px at top left, red 50%, blue 50%);
+    si establecemos un solo valor, el segundo por defecto sera center
+    background-image: radial-gradient(circle 100px al top, red 50%, blue 50%);
+
+
+    .box {
+        background-image: radial-gradient(red, blue)
+        background-image: radial-gradient(circle 100px, red 50%, blue 50%);
+        background-image: radial-gradient(circle 100px at top left, red 50%, blue 50%);
+        background-image: radial-gradient(ellipse 100px 50px at bottom, red 50%, blue 50%);
+        background-image: radial-gradient(ellipse 100px 50px at bottom, transparent 50%, blue 50%);
+    }
+
+
+mayor informacion:
+------------------------
+https://developer.mozilla.org/es/docs/Web/CSS/radial-gradient
