@@ -1,0 +1,44 @@
+Overflow
+---------------------------------------------------------------
+Es una propiedad que controla como se va a comportar la caja con el contenido que se desborde de ella
+es un shorthand que engloba overflow-x y overflow-y
+
+tiene 3 valores posibles
+    hidden: oculta todo el contenido que se desborde.
+    auto: muestra la barra de scroll solo si hace falta
+    scroll: muestra ambas barras de scroll independientemente de que si se necesitan
+
+.article {
+    overflow: auto;
+}
+
+
+Float
+-------------------------------------------------------------
+la propiedad float especifica si un elemento debe salir del flujo normal y aparece a la izquierda o la derecha de su contenedor.
+los elementos de texto y los elementos en linea apareceran a su alrededor.
+
+tiene 3 valores posibles
+    left: flota el elemento a la izquierda del contenedor.
+    right: flota el elemento a la derecha del contenedor.
+    none: elimina el float.
+
+NO existe float: center;
+
+Un elemento flotando hace que el padre deje de contenerlo, hay varias formas de solucionarlo, la mas comoda es overflow: hidden
+
+.article-float {
+    border: 1px solid blue;
+    overflow: hidden; // elemento flotantes contiene al padre.
+}
+
+.article-float img {
+    max-width: 50%;
+    float: right;
+    margin-left: 0.5em;
+}
+
+mas informacion
+----------------
+https://developer.mozilla.org/es/docs/Web/CSS/float
+https://developer.mozilla.org/es/docs/Web/CSS/clear
