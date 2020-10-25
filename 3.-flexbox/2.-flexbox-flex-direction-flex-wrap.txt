@@ -1,0 +1,31 @@
+Flexbox
+------------------------------------------------------------
+display: flex;
+    Convierte el contenedor en un contexto para flexbox y hace que el contenedor sea un elemento de bloque para los elementos que lo rodean.
+
+display: inline-flex;
+    Convierte el contenedor en un contexto para flexbox y hace que el contenedor sea un elemento en linea para los elementos que lo rodean.
+
+flex-direction: row(default) | row-reverse | column | column-reverse
+    Modifica la direccion, por defecto es row (horizontal de derecha a izquierda)
+
+    => row-reverse (horizontal de derecha a izquierda)
+    => column (vertical de arriba abajo)
+    => column-reverse (vertical de abajo arriba)
+
+flex-wrap: no-wrap(default) | wrap | wrap-reverse
+    Controla si lo elementos saltaran de linea o no
+
+    => no-wrap = es el valor por defecto, un contenedor flex va hacer que todos los elementos se queden en una linea si no lo especificamos lo contrario,
+    => wrap = hace que los elementos que no queden en una linea (manteniendo sus dimensiones, si las tuviera) salten a la linea inferior.
+    => wrap-reverse = hace lo mismo que wrap pero en lugar de hacer que salten a la linea inferior, hacen que salte a la linea superior.
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+
+}
