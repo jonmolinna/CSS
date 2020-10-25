@@ -1,0 +1,25 @@
+Flex Items
+-------------------------------------------------------
+Propiedad flex: es un shorthand que engloba las siguientes propiedades.
+    todas las medidas se establecen en funcion del espacio disponible en el contenedor.
+    todas las propiedades van en funcion del MAIN-AXIS.
+
+    flex-grow: establece que hacer cuando hay espacio sobrante. Cuantas divisiones coge el elemento. valor es una entero desde 0 hasta n o auto.
+    flex-shrink: establece que hacer cuando no hay espacio suficiente. cuantas divisiones pierde el elemento. El valor es un entero desde 0 hasta n.
+    flex-basis: establece cuanto tiene que ocupar el item antes de encojer o extenderse. Flex basis prevalece ante width si el main-axis es horizontal
+                o ante height si el main-axis es vertical. El valor es un entero desde 0 hasta n
+
+Loa valores de flex son:
+    por defecto es 0 1 auto
+
+    flex: auto; equivale a 1 1 auto;
+    flex: none; equivale a 0 0 auto;
+    flex: flex-grow(obligatorio) flex-shrink(opcional) flex-basis(opcional);
+
+
+Order: Establece que orden ocupara el elemento en el contenedor flex. el valor es el "peso" respecto a los valores que tengan los otros elementos. Por defecto es 0.
+
+
+ Extra:
+        Existe un shorthand para flex-direction y flex-wrap. flex-flow: flex-direction flex-wrap. 
+         => flex-flow: column wrap;
