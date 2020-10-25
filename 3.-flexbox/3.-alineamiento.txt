@@ -1,0 +1,61 @@
+Flexbox Alineamiento
+----------------------------------------------------------------------
+Estas propiedades para alinear se aplican SIEMPRE al flex container
+Existen propiedades para el main-axis y para el cross-axis
+
+Main-Axis
+----------------------------------------------
+    justify-content: flex-start(default) | center | space-between | space-around | space-evenly | flex-end
+
+    => flex-start -> alinea los elementos al principio del main axis.
+    => center -> centra los elementos en la mitad del main axis.
+    => flex-end -> alinea los elementos al final del main axis.
+    => space-between -> distribuye los items a la misma distancia y no deja espacio exterior ni el primer ni el ultimo flex-end.
+    => space-around -> distribuye los items a la misma distancia y deja un espacio exterior en el primero y en el ultimo flex-item.
+    => space-evenly -> distribuye los items y los espacios exteriores del primer y ultimo flex-item dejando la misma distancia entre todos.
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-item {
+
+}
+
+
+Cross-Axis
+-----------------------------------------------
+    align-items: Una sola linea. (para imaganes tambien)
+        flex-start | center | flex-end | stretch(default) | baseline
+
+    align-content: varias lineas
+        flex-start | center | flex-end | stretch(default) | baseline
+
+    align-self: se aplica al flex-item. sirve para alinear un elemento el concreto en el cross-axis
+        align-self: center;
+
+TRUCO EXTRA: Al utilizar auto con la propiedad margin lo que sucede es que el elemento se va al lado contrario del margen que dimos,
+si ponemos margin:auto el elemento se centra completamente, tanto vertical como horizontalmente.
+
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.flex-item {
+
+}
+
+
+Del TRUCO
+----------------
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    margin-bottom: auto;
+    margin-left: auto;
+}
