@@ -1,4 +1,4 @@
-Flexbox Alineamiento
+Flexbox Alineamiento (Padre)
 ----------------------------------------------------------------------
 Estas propiedades para alinear se aplican SIEMPRE al flex container
 Existen propiedades para el main-axis y para el cross-axis
