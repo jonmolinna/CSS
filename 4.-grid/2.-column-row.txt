@@ -1,0 +1,19 @@
+Grid-column y Grid-row
+------------------------------------------------------
+Ordenar elementos con grid-column y grid-row
+
+- grid-column-start => establece desde que column-line empezara el elemento.
+- grid-column-end => establece hasta que column-line llega el elemento
+- grid-row-start => establece desde que row-line empezara el elemento.
+- grid-row-end => estblece hasta que row-line llega el elemento.
+
+Existe un shorthand que engloba las 2 propiedades
+grid-column: start / end
+grid-row: start / end
+
+tanto start como end admiten valores positivos, negativos y la palabra span.
+valor positivo: empieza a contar las column-lines o las row-lines de izquierda a derecha.
+valor negativo: empieza a contar las column-lines o las row-lines de derecha a izquierda.
+span: establecemos cuantas columnas o filas ha de ocupar, span 3 decirle que ocupe 3 columnas
+
+tips: si ponemos en el valor end -1 llegara hasta el final.
