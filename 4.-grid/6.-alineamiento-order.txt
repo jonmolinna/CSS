@@ -1,0 +1,34 @@
+Alineamiento:
+    justify-items: Alinea los elementos horizontalmente respecto a la celda
+    align-items: Alinea los elementos verticalmente respecto a la celda
+        Admiten los valores:
+            start
+            end
+            center
+            stretch (default)
+    place-items: Engloba las propiedades justify-items y align-items
+      place-items: align-items justify-items
+
+    justify-content: Alinea los elementos horizontalmente respecto al contenedor
+    align-content: Alinea los elementos verticalmente respecto al contenedor
+    Admiten los valores:
+        start
+        end
+        center
+        stretch (default)
+        space-around
+        space-between
+        space-evenly
+        
+    place-content: align-content justify-content
+    Tenemos las mismas propiedades con self para los items:
+        justify-self
+        align-self
+        place-self
+        Admite los valores:  
+            start
+            end
+            center
+            stretch
+
+order: Funciona igual que en flexbox, por defecto todos los items tienen order:0
