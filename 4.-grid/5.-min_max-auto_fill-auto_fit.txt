@@ -1,0 +1,9 @@
+minmax():
+    Recibe dos parámetros (valores) para establecer el mínimo y el máximo que pueden tener los items.
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    
+    min-content: mímimo necesario en función del contenido
+    max-content: máximo necesario en función del contenido
+    
+    auto-fill: Crea tantos grid-items vacios como queden en el viewport respetando las medidas.
+    auto-fit: Elimina los grid-items vacios que no se estén ocupando.
