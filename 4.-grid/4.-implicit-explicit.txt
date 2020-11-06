@@ -1,0 +1,17 @@
+explicit grid:
+    es el grid que declaramos, tanto con grid-template-columns como grid-template-rows.
+
+implicit-grid:
+    Es el grid que no declaramos, los items que queden fuera del explicit grid.
+
+grid-auto-columns:
+    establece que hacer con las columnas no definidas.
+
+grid-auto-rows:
+    establece que hacer con las filas no definidas.
+
+grid-auto-flow:
+    establece la direccion en la cual se va a pintar el implicit grid. adminite tres valores:
+        row(default) : se crearean filas adicionales.
+        column : se crearan columnas adicionales.
+        dense : establece que hacer con los huecos que queden.
