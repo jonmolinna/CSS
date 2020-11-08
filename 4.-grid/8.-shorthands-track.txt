@@ -1,0 +1,20 @@
+Shorthands
+-----------------------------------
+grid: (sin soporte total)
+    https://developer.mozilla.org/es/docs/Web/CSS/grid
+
+grid-tamplate
+    -> Engloba grid-template-columns, grid-template-rows y grid-tamplate-areas
+
+grid-gap
+    -> Engloba grid-column-gap y grid-row-gap
+
+grid-column
+    -> Engloba grid-column-start y grid-column-end
+
+grid-row
+    -> Engloba grid-row-start y grid-row-end
+
+Grid Track
+---------------------------------
+Son las cajas consecutivo tanto vertical como horizontal
